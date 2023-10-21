@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulaire d'inscription</title>
+        <meta charset="utf-8"/>
+        <link rel="icon" href="icon.png"/>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body class="fond">
+        <h1 align="center" style="color:red;">Mention Informatique et Technologie</h1>
+        <h2 align="center" >Formulaire d'inscription</h2>
+        <p class="warning">Il est illégal de donner de fausses informations ou de dissimuler des informations dans ce
+            formulaire</p>
+
+        <div class="container_form">
+            <form class="box" action="page.html" method="post">
+                <div class="box1">
+                    <div class="labels_1">
+                        <span>Noms :</span>
+                        <span>Prénoms :</span>
+                        <span>Nationalité :</span>
+                        <span>Genre :</span>
+                        <span>Date de naissance :</span>
+                        <span>Lieu de naissance :</span>
+                        <span>Adresse :</span>
+                        <span>Téléphone :</span>
+                        <span>Email :</span>
+                    </div>
+                    <div class="entries_1">
+                        <input type="text" name="noms"/>
+                        <input type="text" name="prenoms"/>
+                        <input type="text" name="nationalite"/>
+                        <div>
+                            <span>Masculin</span><input type="checkbox" name="m">
+                            <span>Féminin</span><input type="checkbox" name="f"/>
+                        </div>
+                        
+                        <input type="date" name="date_de_naissance"/>
+                        <input type="text" name="lieu_de_naissance"/>
+                        <input type="text" name="adresse"/>
+                        <input type="text" name="telephone"/>
+                        <input type="text" name="email"/>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="sous_box1">
+                        <div class="labels_2">
+                            <span>Année du bacc :</span>
+                            <span>Série :</span>
+                            <span>Numéro d'inscription</span>
+                            <span>Moyenne au bacc :</span>
+                            <span>Mention :</span>
+                            <span>Etablissement d'origine :</span>
+                        </div>
+                        <div class="entries_2">
+                            <input type="text" name="annee_bacc"/>
+
+                            <select name="serie">
+                                <option value="C">C</option>
+                                <option value="S">S</option>
+                            </select>
+
+                            <input type="text" name="numero"/>
+                            <input type="text" name="moyenne"/>
+
+                            <select name="mention">
+                                <option value="1">Passable</option>
+                                <option value="2">Assez Bien</option>
+                                <option value="3">Bien</option>
+                                <option value="4">Très Bien</option>
+                                <option value="5">Excellent</option>
+                            </select>
+                            <input type="text" name="etablissement"/>
+                        </div>
+                    </div>
+                    <div class="sous_box2">
+                        <input type="submit" value="Valider" class="valider"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="contact">
+            <h2>Nos coordonnées :</h2>
+            <p>Université d'Antananarivo</p>
+            <p>BP 906 Ankatso</p>
+            <p>Domaine Sciences et Technologies</p>
+            <p>Département de Mathématiques et Informatiques</p>
+            <p>Mention Informatique et Technologies</p>
+            <p>Tel : +261 34 53 140 38</p>
+
+        </div>
+    </body>
+</html>

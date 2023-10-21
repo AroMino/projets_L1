@@ -103,46 +103,63 @@ char* gen_mdp(int len, char* car){
 	return mdp;
 }
 
+void print_line(char* login,char* dir,char* shell,char* mail){
+	printf("<TR>\n");
+	printf("<TD>%s</TD>\n",login);
+	printf("<TD>%s</TD>\n",dir);
+	printf("<TD>%s</TD>\n",mail);
+	printf("<TD>%s</TD>\n",shell);
+	printf("</TR>\n");
+}
+
 int main(){
 	char path[] = "/etc/passwd";
-	char path_csv[] = "/home/arrow/MIT/Programmation2/user_dir_shell/user.csv";
-	
 	int nombre = 0;
 	char** human_user = get_user(path,&nombre);
 	
+	printf("Content-Type: text/html\n\n");
 	
+	printf("<HTML>\n");
+	printf("<HEAD>\n");
+	printf("<TITLE>User Info</TITLE>\n");
+	printf("<META charset=UTF-8>\n");
+	printf("<STYLE>");
+	printf("table{margin:0 0 0 50px;width:80vw;}\n");
+	printf("td{border-style:solid;text-align:center;padding:5px 10px 5px 10px;}\n");
+	printf("h1{margin:0 0 0 10px;}\n");
+	printf("</STYLE>");
+	printf("</HEAD>\n");
 	
-	FILE* file = fopen(path_csv,"w");
-	if(file == NULL){
-		printf("Erreur d'ouverture\n");
-		fclose(file);
-		exit(0);
-	}
-	fprintf(file,"user dir mail mot_de_passe shell\n");
+	printf("<BODY>\n");
+	printf("<H1> Liste des utilisateurs du système </H1><BR>");
+	printf("<TABLE>\n");
+	printf("<TR>\n");
+	printf("<TD>USERS</TD>\n");
+	printf("<TD>DIRECTORIES</TD>\n");
+	printf("<TD>EMAILS</TD>\n");
+	printf("<TD>SHELLS</TD>\n");
+	printf("</TR>\n");
+	
 	for(int i=0 ; i<nombre ; i++){
 		char* login = NULL;
 		char* dir = NULL;
 		char* shell = NULL;
 		char* mail = NULL;
-		char* mdp = NULL;
 		
 		login = get_champ(human_user[i],0,':');
 		dir = get_champ(human_user[i],5,':');
 		shell = get_champ(human_user[i],6,':');
 		mail = gen_mail(login);
-		mdp = gen_mdp(8,"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789");
-		
-		fprintf(file,"%s %s %s %s %s\n",login,dir,mail,mdp,shell);
+		print_line(login,dir,shell,mail);
 		
 		free(login);
 		free(dir);
 		free(shell);
 		free(mail);
-		free(mdp);
 	}
-	
-	fclose(file);
-	printf("Terminé avec succès\n");
+	printf("</TABLE>\n");
+	printf("</BODY>\n");
+	printf("</HTML>\n");
 	
 	free(human_user);
 	return 0;

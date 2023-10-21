@@ -1,0 +1,10 @@
+Package: devinette
+Version: 1.0
+Section: base
+Priority: optional
+Architecture: all
+Depends:
+Maintainer: "aro<arominorakotoarijaona@gmail.com>"
+Description: Petit programme amusant
+Homepage:
+

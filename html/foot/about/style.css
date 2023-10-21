@@ -1,0 +1,322 @@
+.fond{
+    background-color: rgb(0, 0, 0);
+    z-index: 0;
+}
+
+.bar{
+    background-color:rgb(218, 165, 32, 0.4);
+    padding:0.5vw;
+    width:98vw;
+    backdrop-filter: blur(10px);
+    display:flex;
+    border-top-left-radius:4vw;
+    border-bottom-left-radius:4vw;
+    z-index:5;
+    opacity:0;
+    transform: translateX(20vw);
+    animation: apparition 1s 0.5s ease-out forwards;
+}
+
+.icon{
+    opacity:1;
+    width:4.55vw;
+    height: 4.55vw;
+    margin-left: 0.25vw;
+    margin-top: 0.095vw;
+    animation: icone 5s ease-in-out infinite;
+}
+
+.bouton{
+    margin-left:40vw;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.lien{
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+    margin:1vw 3vw 1vw 3vw;
+    font-size: 2vw;
+}
+
+.lien:hover{
+    background:linear-gradient(90deg,red,yellow,red);
+    background-size: 100%;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    animation: anim_lien 1s forwards;
+}
+
+@keyframes anim_lien {
+    100%{
+        background-position: 3em;
+    }
+}
+
+.titre {
+    color:goldenrod;
+    margin:3vw 0vw 2vw 15vw;
+    font-size:5vw;
+    font-family:Courier;
+    font-weight:bolder;
+    opacity:0;
+    transform: translateX(5vw);
+    animation: apparition 0.4s 0.8s ease-out forwards;
+    line-height: 6vw;
+}
+
+@keyframes apparition {
+    100% {
+        opacity:1;
+        transform:none;
+    }
+}
+
+@keyframes icone{
+    from{
+        transform:translateX(20vw) rotateZ(540deg) ;
+    }
+    50%{
+        transform:translateX(0vw) rotateZ(0deg) ;
+    }
+    to{
+        transform:translateX(20vw) rotateZ(540deg) ;
+    }
+}
+
+.contenu{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width:max-content;
+}
+
+.text{
+    margin:0vw 10vw 0vw 7vw;
+    width:50vw;
+}
+
+.paragraphe{
+    color:white
+}
+
+.box_image{
+    align-self: center;
+    border:0.5vw solid goldenrod;
+    border-radius: 5vw;
+    width:20vw;
+    height:30vw;
+    transition:0.2s;
+    animation:anim_photo 20s linear infinite forwards;
+}
+@keyframes anim_photo{
+    100%,0%{
+        opacity:1;
+        background-image: url(zidane5.jpg);
+        background-size: 100%;
+    } 
+    15%{
+        opacity:1;
+        background-image: url(zidane5.jpg);
+        background-size: 100%;
+    }
+    17%{ 
+        background-size: 200%;
+    }
+    20%{
+        background-image: url(ronaldinho.jpg);
+        background-size: 100%;
+        opacity:1;
+    }
+    35%{
+        opacity:1;
+        background-image: url(ronaldinho.jpg);
+        background-size: 100%;
+    }
+    37%{
+        opacity:0;
+    }
+    
+    40%{
+        opacity:1;
+        background-image: url(maradona1.jpg);
+        background-size: 100%;
+    }
+    55%{
+        opacity:1;
+        background-image: url(maradona1.jpg);
+        background-size: 100%;
+    }
+    57%{
+        opacity:0;
+    }
+    60%{
+        opacity:1;
+        background-image: url(maldini.jpg);
+        background-size: 100%;
+    }
+    75%{
+        opacity:1;
+        background-image: url(maldini.jpg);
+        background-size: 100%;
+    }
+    77%{
+        opacity:0;
+    }
+    80%{
+        opacity:1;
+        background-image: url(nazario.jpg);
+        background-size: 100%;
+    }
+    95%{
+        opacity:1;
+        background-image: url(nazario.jpg);
+        background-size: 100%;
+    }
+    97%{
+        opacity:0;
+    }
+}
+
+
+.container_contact{
+    margin:5vw 0.5vw 0 0.5vw;
+    padding:2vw 0vw 2vw 2vw ;
+    height:max-content;
+    background: rgba(145, 104, 0, 0.521);
+    backdrop-filter:blur(2px);
+    border-radius:2vw;
+    width:45vw;
+    opacity:0;
+    transform: translateX(5vw);
+    animation: apparition 0.4s 2s ease-out forwards;
+}
+
+.container_contact:hover{
+    padding:2vw 0vw 2vw 2vw ;
+    height:max-content;
+    background: rgba(145, 104, 0, 0.74);
+    border-radius:2vw;
+    width:45vw;
+    opacity:0;
+    transform: translateX(5vw);
+    animation: apparition 0.4s 2s ease-out forwards;
+}
+
+.icone_num{
+    width:1.2vw;
+    margin-right:0.5vw;
+}
+
+.icone_location{
+    width:1vw;
+    margin-right:0.5vw;
+}
+
+.icone_mail{
+    border-radius: 20%;
+    width:1.2vw;
+    margin-right:0.5vw;
+    margin-top:0.2vw;
+}
+
+.icone_git{
+    border-radius: 20%;
+    width:1.2vw;
+    margin-right:0.5vw;
+    margin-top:0.1vw;
+}
+
+.location{
+    color :#ffffff;
+    font-size:1.2vw;
+    font-family:Cambria;
+    text-decoration:none;
+}
+
+.mail{
+    color :#ffffff;
+    font-size:1.2vw;
+    font-family:Cambria;
+    text-decoration:none;
+}
+
+.num{
+    color :#ffffff;
+    font-size:1.2vw;
+    font-family:Cambria;
+    text-decoration:none;
+}
+
+.git{
+    color :#ffffff;
+    font-size:1.2vw;
+    font-family:Cambria;
+    text-decoration:none;
+}
+
+.box{
+    display: flex;
+    margin-top:0.5vw;
+    transition: transform 0.1s steps(10);
+}
+
+.box1{
+    display: flex;
+    margin-top:0.5vw;
+    transition: transform 0.1s steps(10);
+}
+
+.box2{
+    display: flex;
+    margin-top:0.5vw;
+    transition: transform 0.1s steps(10);
+}
+
+.box3{
+    display: flex;
+    margin-top:0.5vw;
+    transition: transform 0.1s steps(10);
+}
+
+.box:hover{
+    display: flex;
+    margin-top:0.5vw;
+    transform:scale(0.96);
+}
+
+.box:hover .icone_location{
+    animation: icones 2s linear infinite;
+}
+
+.box1:hover{
+    display: flex;
+    margin-top:0.5vw;
+    transform:scale(0.96);
+}
+
+.box1:hover .icone_mail{
+    animation: icones 2s linear infinite;
+}
+
+.box2:hover{
+    display: flex;
+    margin-top:0.5vw;
+    transform:scale(0.96);
+}
+
+.box2:hover .icone_num{
+    animation: icones 2s linear infinite;
+}
+
+.box3:hover{
+    display: flex;
+    margin-top:0.5vw;
+    transform:scale(0.96);
+}
+
+.box3:hover .icone_git{
+    animation: icones 2s linear infinite;
+}

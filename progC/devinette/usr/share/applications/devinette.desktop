@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Devinette
+Comment=Petit programme
+GenericName=Petit programme
+Keywords=devinette
+Exec=/usr/bin/devinette
+Terminal=true
+Type=Application
+Icon=/usr/share/icons/devinette.png
+Categories=Applications;Games
+StartupWMClass=Devinette
+StartupNotify=true

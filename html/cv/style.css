@@ -1,0 +1,155 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+.box{
+    background-color: rgb(204, 206, 207);
+    width:320px;
+    height: 1250px;;
+    float:left;
+}
+
+.photo{
+    height: 230px;
+    width: 230px;
+    margin:45px;
+    border-radius: 50%;
+    
+}
+
+.conteneur_noms{
+    width:max-content;
+    height: max-content;
+    margin:auto;
+}
+
+.nom{
+    font-size:30px;
+    width:max-content;
+    margin:auto;
+}
+
+.prenom{
+    font-size:30px;
+    width:max-content;
+    margin:auto;
+}
+
+.box2{
+    width: auto;
+    height:max-content;
+    margin-left:360px;
+    margin-bottom:20px;
+    margin-right:30px;
+}
+
+h3{
+    margin-left:10px;
+    padding-right:auto;
+}
+
+.sous_contenu{
+    display:flex;
+    background-color:rgb(204, 206, 207);
+    color:rgb(15, 96, 172);
+    width:auto;
+    padding: 5px 200px 5px 10px;
+    font-size:larger;
+}
+
+h4{
+    margin:20px 0px 0px 20px;
+}
+
+.contenu{
+    padding:50px 30px 20px 10px;
+
+}
+
+dl{
+    margin:20px 0px 0px 20px;
+    width:800px;
+    color:rgb(139, 139, 139);
+    font-size: larger;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.ecole{
+    color:rgb(139, 139, 139);
+    margin:5px 0px 0px 50px;
+}
+
+.diplome{
+    margin:10px 0px 0px 80px;
+}
+
+.competences{
+    color:rgb(139, 139, 139);
+    margin:10px 0px 10px 50px;
+}
+
+.type{
+    margin:0px 0px 0px 80px;
+}
+
+.mail{
+    display:flex;
+    margin:10px 0px 0px 10px;
+}
+
+.adresse{
+    display:flex;
+    margin:10px 0px 0px 10px;
+}
+
+.telephone{
+    display:flex;
+    margin:10px 0px 0px 10px;
+}
+
+.git{
+    display:flex;
+    margin:10px 0px 0px 10px;
+}
+
+.contact{
+    margin-top: 70px;
+}
+
+h2.titre{
+    background-color:rgb(15, 96, 172);
+    width: max-content;
+    margin:0px 0px 5px 10px;
+    padding:0px 20px;
+}
+
+hr{
+    margin:5px 0px 20px 0px;
+}
+
+.langue{
+    margin-top: 70px;
+}
+
+.niveau{
+    font-weight:400;
+}
+
+b{
+    margin:20px;
+}
+
+.loisir{
+    margin-top: 70px;
+}
+
+.liste_hobb{
+    margin-left:30px;
+    font-weight:700;
+}
+
+.element{
+    display:flex;
+    margin:10px 0px 0px 30px;
+}
