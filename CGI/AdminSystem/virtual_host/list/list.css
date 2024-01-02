@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+	
+:root{
+    --primary:#e4e4e4;
+    --secondary:#ffffff;
+    --ribbon:#007bff;
+    --primary-shadow:#132344;
+    --file:white;
+    --active:#ffffff;
+    --active-dark:#dadada;
+    --notactive:#cc0c1f;
+    --notactive-dark:#f1182e;
+    --table-text-dark:#212529;
+}
+
+body{
+    background-color:var(--primary);
+}
+
+h1{
+    margin:2% 20%;
+}
+
+.title{
+    text-shadow: 1px 1px 1px grey;
+    width:78%;
+    margin:2% 0% 0 20%;
+    background-color:var(--ribbon);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    height:2.5em;
+    color:white;
+    font-size: x-large;
+    padding:.5em 0 0 1em;
+
+}
+
+.table_box{
+    width:78%;
+    margin:0 20%;
+    padding:3% 0 1% 0;
+    border:1px solid grey;
+    background-color: var(--secondary);
+}
+
+table{
+    margin:0 5%;
+    width:90%;
+    background-color:var(--secondary);
+}
+
+table tr:first-child{
+    font-size: large;
+    font-weight: 700;
+}
+
+td{
+    text-align: center;
+    border:1px solid grey;
+    height:3em;
+}
+
+.active{
+    background-color: var(--active);
+}
+
+.notactive{
+    background-color: var(--notactive);
+    color:white;
+}
+
+.active a{
+    color:var(--table-text-dark);
+}
+
+.notactive a{
+    color:var(--secondary)
+}
+
+.active:hover{
+    background-color: var(--active-dark);
+}
+
+.notactive:hover{
+    background-color: var(--notactive-dark);
+    color:white;
+}

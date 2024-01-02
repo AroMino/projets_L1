@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminSystem</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link href="../../fontawesome-free-6.4.2-web/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../nav_bar/all.min.css">
+  <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="../../nav_bar/sweetalert2.min.css">
+  <!-- Toastr -->
+  <link rel="stylesheet" href="../../nav_bar/toastr.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../nav_bar/adminlte.min.css">
+    <link rel="stylesheet" href="./form.css">
+  <!-- Css of code addition -->
+  <link rel="stylesheet" href="../../nav_bar/addition.css">
+</head>
+
+
+  <!-- jQuery -->
+  <script src="../../nav_bar/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../../nav_bar/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../../nav_bar/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="../../nav_bar/demo.js"></script>
+
+
+    <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" style="position:fixed">
+    <!-- Brand Logo -->
+    <a href="../../accueil/accueil.cgi" class="brand-link">
+      <i class="fa-brands fa-linux"></i>
+      <span class="page_name">AdminSystem</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="../../aro.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Aro Mino</a>
+        </div>
+      </div>
+
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+
+          
+          <li class="nav-item">
+            <a href="../../session/session.cgi?user=a0l0l" class="nav-link">
+                <i class="fa-solid fa-lock"></i>
+              <p>
+                Auth.log
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active"> <!--active-->
+                <i class="fa-solid fa-server"></i>
+              <p>
+                VirtualHost
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="./form.cgi" class="nav-link active">
+                    <i class="fa-solid fa-plus"></i>
+                  <p>Create</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../list/list.cgi" class="nav-link">
+                    <i class="fa-solid fa-list"></i>
+                  <p>List</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../statistics/statistics.html" class="nav-link">
+                  <i class="fa-solid fa-database"></i>
+                  <p>Logs</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+  <h1>VirtualHost Create</h1>
+  <div class="title">VirtualHost</div>
+  <div class="principal_box">
+    <form action="./back.cgi" method="get">
+        <div class="server">
+            <input type="text" name="servername" placeholder="ServerName" required>
+            <input type="text" name="serveralias" placeholder="ServerAlias">
+            <input type="text" name="serveradmin" placeholder="ServerAdmin">
+        </div>
+        <div class="box">
+            <input type="text" name="documentroot" placeholder="DocumentRoot" required>
+
+            <div class="directive">
+                <div>
+                    <label>AllowOveride : </label><select name="allowoverride0" >
+                        <option value="all">All</option>
+                        <option value="none">None</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="checkbox" name="indexes0">
+                    <label>Indexes</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="followsymlinks0">
+                    <label>FolowSymLinks</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="execcgi0">
+                    <label>ExecCGI</label>
+                </div>
+            </div>
+        </div>
+        <button id="add">Add</button>
+        <input class="tab" type="hidden" name="tab" value="0">
+        <input class="tab_len" type="hidden" name="tab_len" value="1">
+        <input type="submit" class="submit" value="Create">
+    </form>
+  </div>
+    <script src="./form.js"></script>
+</body>
+</html>

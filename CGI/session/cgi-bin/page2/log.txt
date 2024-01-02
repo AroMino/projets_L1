@@ -1,4 +1,0 @@
-
-test aro/mg
-aro mino
-

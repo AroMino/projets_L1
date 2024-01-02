@@ -1,3 +1,5 @@
+#include <math.h>
+#include <stdio.h>
 #include "newton.h"
 
 double newton(double a, double b){

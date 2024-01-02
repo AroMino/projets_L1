@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(228, 228, 228);
+}
+
+h1{
+    margin:1% 0 3% 20% ;
+}
+
+.content{
+    background-color: rgb(255, 255, 255);
+    margin:5% 0 0 30%;
+    width:60%;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+.content .head{
+    background-color: rgb(0, 102, 255);
+    height: 40px;
+    border-top-right-radius: 5px ;
+    border-top-left-radius: 5px ;
+    padding:8px 20px;
+    color:white;
+    margin-bottom:50px;
+}
+
+.content span{
+    color:rgb(243, 31, 31);
+}
+
+.content h2{
+    margin:20px 40px;
+}
+
+.buttons-box{
+    display: flex;
+    justify-content: flex-end;
+    padding:0 20px;
+    margin:30px 0 10px 0;
+}
+
+.buttons-box a{
+    background-color: rgb(0, 119, 255);
+    color:white;
+    padding:10px 20px;
+    height:40px;
+    margin-left:10px;
+    border-radius: 5px;
+    text-align: center;
+    width:80px;
+}
+
+.buttons-box .activate{
+    background-color: rgb(0, 187, 16);
+    width: auto;
+}
+
+.buttons-box a:hover{
+    background-color: rgb(0, 94, 202);
+}
+
+.buttons-box .activate:hover{
+    background-color: rgb(0, 151, 13);
+}

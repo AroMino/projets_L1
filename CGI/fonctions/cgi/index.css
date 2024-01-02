@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    --body:rgb(179, 179, 179);
+    --shadow:rgb(66, 66, 66);
+    --second:rgb(0, 133, 173);
+    background-color:var(--body)
+}
+
+.fonction{
+    margin:10vh 10vw;
+    color:white;
+    text-shadow: 2px 1px black;
+}
+
+form{
+    background-color:var(--second);
+    height:100px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 20px 10px 10px 2px var(--shadow);
+}
+
+form .intervalle{
+    width:100px;
+    height:30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    outline: none;
+}
+
+select{
+    width: 120px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: center;
+}
+
+.submit{
+    width:100px;
+    height:30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: center;
+}
+
+table{
+    margin:0 5vw;
+    background-color: var(--second);
+    border:1px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    box-shadow: 10px 10px 10px 2px var(--shadow);
+}
+
+td{
+    width:200px;
+    height: 40px;
+    backdrop-filter: 10px;
+    border:1px solid rgb(0, 0, 0);
+    text-align: center;
+    text-shadow: 2px 1px black;
+    color:white;
+}
+
+.solution{
+    margin:10vh 5vw;
+    color:white;
+    text-shadow: 2px 1px black;
+}
